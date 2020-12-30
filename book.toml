@@ -1,0 +1,6 @@
+[book]
+authors = ["0kalekale"]
+language = "en"
+multilingual = false
+src = "src"
+title = "anilistpy"
