@@ -97,7 +97,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Anilistpy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="install.html"><strong aria-hidden="true">1.1.</strong> installing</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> Using</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="obj.html"><strong aria-hidden="true">2.1.</strong> Getting started</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Anilistpy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Install.html"><strong aria-hidden="true">1.1.</strong> installing</a></li><li class="chapter-item expanded "><a href="Import.html"><strong aria-hidden="true">1.2.</strong> getting started</a></li></ol></li><li class="chapter-item expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> Objects</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="anime.html"><strong aria-hidden="true">2.1.</strong> class Anime()</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.2.</strong> class Manga()</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.3.</strong> class Character()</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.4.</strong> class Staff()</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.5.</strong> class Studio()</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.6.</strong> class animeSearch()</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.7.</strong> class mangaSearch()</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.8.</strong> class charSearch()</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -166,7 +166,12 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#anilistpy-img-srchttpsavatars3githubusercontentcomu75199724s30v4-altanilistpy-" id="anilistpy-img-srchttpsavatars3githubusercontentcomu75199724s30v4-altanilistpy-">Anilistpy <img src="https://avatars3.githubusercontent.com/u/75199724?s=30&amp;v=4" alt="anilistpy" /></a></h1>
-<p>Easy to use anilist API v2 wrapper for python3</p>
+<p><a href="https://travis-ci.com/anilistpy/anilistpy"><img src="https://travis-ci.com/anilistpy/anilistpy.svg?branch=master" alt="Build Status" /></a>
+<a href="https://www.codefactor.io/repository/github/anilistpy/anilistpy"><img src="https://www.codefactor.io/repository/github/anilistpy/anilistpy/badge" alt="CodeFactor" /></a>
+<img src="https://img.shields.io/pypi/dm/anilistpy" alt="PyPI - Downloads" />
+<a href="https://pypi.org/project/anilistpy/"><img src="https://img.shields.io/pypi/v/anilistpy.svg" alt="pypi verison" /></a>
+<a href="https://github.com/anilistpy/anilistpy/blob/master/license"><img src="https://img.shields.io/github/license/anilistpy/anilistpy" alt="GitHub license" /></a></p>
+<p>An easy to use python3 wrapper for anilist.co APIv2</p>
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/AGPLv3_Logo.svg/200px-AGPLv3_Logo.svg.png" alt="agpl3" /></p>
 <h1><a class="header" href="#installing" id="installing">Installing</a></h1>
 <h2><a class="header" href="#installing-from-pypi" id="installing-from-pypi">Installing from pypi</a></h2>
@@ -178,24 +183,46 @@
 <h2><a class="header" href="#installing-from-git-unstable--development-branch" id="installing-from-git-unstable--development-branch">Installing from git (Unstable / Development branch)</a></h2>
 <pre><code>pip install git+https://github.com/anilistpy/anilistpy@dev
 </code></pre>
-<h1><a class="header" href="#using-the-api-wrapper" id="using-the-api-wrapper">Using the API wrapper</a></h1>
-<h2><a class="header" href="#objects-in-the-wrapper" id="objects-in-the-wrapper">Objects in the wrapper:</a></h2>
-<ul>
-<li><a href="">Anime()</a></li>
-<li><a href="">Manga()</a></li>
-<li><a href="">Character()</a></li>
-<li><a href="">Staff()</a></li>
-<li><a href="">Studio()</a></li>
-<li><a href="">animeSearch()</a></li>
-<li><a href="">mangaSearch()</a> </li>
-<li><a href="">charSearch()</a></li>
-</ul>
 <h1><a class="header" href="#importing" id="importing">Importing</a></h1>
 <pre><code class="language-py">import anilistpy
 </code></pre>
 <p>or manually import the method/class you need</p>
 <pre><code class="language-py">from anilistpy import Anime
 </code></pre>
+<h1><a class="header" href="#using-the-api-wrapper" id="using-the-api-wrapper">Using the API wrapper</a></h1>
+<h2><a class="header" href="#objects" id="objects">Objects:</a></h2>
+<ul>
+<li><a href="./anime.html">class Anime()</a></li>
+<li><a href="">class Manga()</a></li>
+<li><a href="">class Character()</a></li>
+<li><a href="">class Staff()</a></li>
+<li><a href="">class Studio()</a></li>
+<li><a href="">class animeSearch()</a></li>
+<li><a href="">class mangaSearch()</a> </li>
+<li><a href="">class charSearch()</a></li>
+</ul>
+<h2><a class="header" href="#init" id="init">Init:</a></h2>
+<p>starting the <code>anilistpy.Anime()</code> object</p>
+<p><code>Anime()</code> takes one argument, that is the id of the anime on anilist.co</p>
+<p>example: </p>
+<pre><code class="language-py">from anilistpy import Anime
+animeObject = Anime(1) # 1 is the id of the anime
+</code></pre>
+<h2><a class="header" href="#methods" id="methods">Methods:</a></h2>
+<ul>
+<li><code>Anime.reload()</code></li>
+</ul>
+<p>Reloads the objects, sends the API request again</p>
+<ul>
+<li><code>Anime.json()</code></li>
+</ul>
+<p>Returns the raw json from the API</p>
+<ul>
+<li><code>Anime.title(LA)</code></li>
+</ul>
+<p>Return the title of the anime.</p>
+<p><code>LA</code> should be one of romaji, english, native</p>
+<p><a href="https://github.com/anilistpy/anilistpy/blob/master/anilistpy/anime.py">source code</a></p>
 
                     </main>
 

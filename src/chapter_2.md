@@ -1,13 +1,13 @@
 # Using the API wrapper
 
 
-## Objects in the wrapper:
+## Objects:
 
-- [Anime()]()
-- [Manga()]()
-- [Character()]()
-- [Staff()]()
-- [Studio()]()
-- [animeSearch()]()
-- [mangaSearch()]() 
-- [charSearch()]()
+- [class Anime()](./anime.md)
+- [class Manga()]()
+- [class Character()]()
+- [class Staff()]()
+- [class Studio()]()
+- [class animeSearch()]()
+- [class mangaSearch()]() 
+- [class charSearch()]()
